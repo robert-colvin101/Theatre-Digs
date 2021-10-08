@@ -1,0 +1,8 @@
+<h1>The Digs Hub</h1>
+<h5 class='pb-4'>Accomodation for theatre professionals made easy</h5>
+<% @properties.each do |property| %>
+<h2><%= property.name %></h2>
+<p><%= property.address %></p>
+<p><%= property.price %></p>
+<%= link_to property.name, property_path(property) %>
+<% end %>
