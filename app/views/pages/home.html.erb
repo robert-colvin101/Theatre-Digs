@@ -1,11 +1,20 @@
+
 <h1> Theatre digs app </h1>
-<div class="square"></div>
-<script>
-  anime({
-  targets: '.square',
-  translateX: 250,
-  rotate: '1turn',
-  backgroundColor: 'black',
-  duration: 800
-});
-</script>
+<div class="homepage-container">
+  <div class="homepage-main">
+    <%= form_tag movies_path, method: :get do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Find a movie"
+  %>
+  <%= submit_tag "Search", class: "btn btn-primary" %>
+<% end %>
+<div class="homepage-title">
+<p>Affordable, professional digs for the entertainment industry </p>
+</div>
+<div class="homepage-link">
+<%= link_to 'Find digs now', properties_path, class: 'homepage-link'%>
+</div>
+</div>
+</div>

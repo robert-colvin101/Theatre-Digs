@@ -1,5 +1,29 @@
-.square {
-  height: 100px;
-  width: 100px;
-  background-color: red;
+.homepage-container {
+  display: flex;
+  height: 80vh;
+  width: 100vw;
+}
+
+.homepage-title {
+  text-align: center;
+  justify-content: center;
+  padding-top: 240px;
+}
+
+.homepage-link {
+  background-color: grey;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 0 auto;
+  justify-content: center;
+  color: white;
+  max-height: 80px;
+  width: 160px;
+  text-align: center;
+}
+
+.homepage-main {
+  width: 80vw;
+  margin: 0 auto;
+  justify-content: center;
 }
