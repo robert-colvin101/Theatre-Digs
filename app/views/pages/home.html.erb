@@ -1,20 +1,33 @@
 
-<h1> Theatre digs app </h1>
-<div class="homepage-container">
-  <div class="homepage-main">
-    <%= form_tag movies_path, method: :get do %>
-  <%= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-    placeholder: "Find a movie"
-  %>
-  <%= submit_tag "Search", class: "btn btn-primary" %>
-<% end %>
-<div class="homepage-title">
-<p>Affordable, professional digs for the entertainment industry </p>
+
+
+<div class="intro">
+  <h1> Theatre digs app </h1>
+        <%= video_tag "background_vid.mp4",autoplay: :autoplay, muted: :muted, size: "100%x100%", loop: :loop, mute: :mute, class: 'video'%>
+      </div>
+<div class=“outer-box”>
+  <div class="homepage-container">
+
+    <div class="homepage-main">
+
+
+
+
+      <div class="searchbar">
+        <%= form_tag properties_path, method: "GET" do %>
+        <%#= label_tag :search_by_location, 'Where?' %>
+        <%= text_field_tag :search_by_city, params[:search_by_city],
+        placeholder: "Find digs...",
+        class: "searchbox"%>
+        <%= submit_tag "Find digs now",
+        class: "search_button" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="homepage-link">
-<%= link_to 'Find digs now', properties_path, class: 'homepage-link'%>
-</div>
-</div>
-</div>
+
+
+ <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
