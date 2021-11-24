@@ -1201,6 +1201,16 @@ alphanum-sort@^1.0.0:
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
+anime.min.js@^1.2.3-0:
+  version "1.2.3-0"
+  resolved "https://registry.yarnpkg.com/anime.min.js/-/anime.min.js-1.2.3-0.tgz#d10d58a3606ed3f774e033802393ba24af8af69a"
+  integrity sha512-N4V7QkLsnEKJLdxe4Dv05OtgzzSKmYeynKci1au3Ctb/wklmWFWKmMP63uhz3WtV1MoN0miz/vwZvct3IqeMJw==
+
+animejs@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/animejs/-/animejs-3.2.1.tgz#de9fe2e792f44a777a7fdf6ae160e26604b0cdda"
+  integrity sha512-sWno3ugFryK5nhiDm/2BKeFCpZv7vzerWUcUPyAZLDhMek3+S/p418ldZJbJXo5ZUOpfm2kP2XRO4NJcULMy9A==
+
 ansi-colors@^3.0.0:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-3.2.4.tgz#e3a3da4bfbae6c86a9c285625de124a234026fbf"

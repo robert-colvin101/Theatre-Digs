@@ -1,5 +1,10 @@
 class PagesController < ApplicationController
   def home
-    @properties = Property.all
+
+    if params[:query].present?
+      @properties = Property.where("city ILIKE ?", "%#{params[:query]}%")
+    else
+      @properties = Property.all
+    end
   end
 end

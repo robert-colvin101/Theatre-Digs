@@ -1,26 +1,49 @@
-<h1>The Digs Hub</h1>
-<h5 class='pb-4'>Accomodation for theatre professionals made easy</h5>
-<div class="grid">
-<% @properties.each do |property| %>
- <%= link_to property_path(property) do %>
-<div class="container">
-  <div class="overlay">
-    <div class = "items"></div>
-    <div class = "items head">
-      <h2><%= property.name %></h2>
-      <hr>
-    </div>
-    <div class = "items price">
-      <p class="old"><%= property.address %></p>
-      <p class="new"><p>£<%= property.price %> p/n</p>
-    </div>
-    <div class="items cart">
-      <i class="fa fa-shopping-cart"></i>
-      <span>Book now!</span>
+
+<div class="cards">
+  <% @properties.each do |property| %>
+<div class="card">
+  <img src="" class="card-image" alt="">
+    <div class="card-overlay">
+    <div class="card-header">
+      <h3 class="card-title">property.name</h3>
+      <p class="card-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor unde at, veniam laborum ab perspiciatis similique ex earum impedit necessitatibus magni itaque neque corrupti doloremque, a dicta vitae consequuntur?
+      </p>
     </div>
   </div>
+
 </div>
 <% end %>
+</div>
+
+
+
+
+
+
+
+<!--
+<% @properties.each do |property| %>
+<div class="card">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><%= property.name  %> </h5>
+    <p class="card-text"><%=  property.price %></p>
+    <%= link_to properties_path(property) do %>
+    <a href="#" class="btn btn-primary">Find out more</a>
+    <% end %>
+  </div>
+
+  <%=  property.city %>
+
+
+
+</div>
 <% end %>
 
+<%= link_to 'Create a new property', new_property_path %>
+
+
 <%= link_to 'Go back to search', root_path %>
+</div>
+ -->
