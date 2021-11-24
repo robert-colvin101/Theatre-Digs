@@ -3,6 +3,12 @@ class PropertiesController < ApplicationController
 
   def index
    @properties = Property.all
+
+    if params[:query].present?
+      @properties = Property.where(city: params[:query])
+    else
+      @properties = Property.all
+    end
   end
 
   def show
@@ -38,7 +44,7 @@ class PropertiesController < ApplicationController
   end
 
    def property_params
-    params.require(:property).permit(:name, :address, :price)
+    params.require(:property).permit(:name, :address, :price, :city)
   end
 
 end
